@@ -78,15 +78,5 @@
             >;
         };
 
-        layer_Layer__4 {
-            bindings = <
-       &trans  &trans      &trans  &trans  &trans  &trans            &trans                                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-       &trans  &trans      &trans  &trans  &trans  &trans            &trans                                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &kp CAPSLOCK  &trans      &trans  &trans  &trans  &trans            &trans  &trans    &trans                  &trans  &kp HOME  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-       &trans  &trans      &trans  &trans  &trans  &trans                            &kp LGUI                  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-       &trans  &trans  &kp ESCAPE  &trans  &trans                    &trans  &trans    &trans                  &trans    &trans  &trans          &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
     };
 };
