@@ -388,6 +388,34 @@
             bindings = <&vim_prefix &quotation_dash>;
             label = "VIM_QUOTATION_DASH";
         };
+
+        vim_dagger: vim_dagger {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&vim_prefix &dagger>;
+            label = "VIM_DAGGER";
+        };
+
+        vim_double_dagger: vim_double_dagger {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&vim_prefix &double_dagger>;
+            label = "VIM_DOUBLE_DAGGER";
+        };
+
+        vim_pilcrow: vim_pilcrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&vim_prefix &pilcrow>;
+            label = "VIM_PILCROW";
+        };
+
+        vim_section_sign: vim_section_sign {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&vim_prefix &section_sign>;
+            label = "VIM_SECTION_SIGN";
+        };
     };
 
     keymap {
@@ -395,25 +423,35 @@
 
         LAYER_COLEMAK_MOD_DH {
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 5                                                   &tog 6     &kp N6  &kp N7  &kp N8     &kp N9    &kp N0         &kp MINUS
+&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 6                                                   &tog 7     &kp N6  &kp N7  &kp N8     &kp N9    &kp N0         &kp MINUS
 &kp TAB    &kp Q      &kp W     &kp F     &kp P      &kp B   &tog 1                                                   &tog 3     &kp J   &kp L   &kp U      &kp Y     &kp SEMICOLON  &kp BSLH
-&kp ESC    &kp A      &kp R     &kp S     &kp T      &kp G   &tog 2    &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &tog 9     &kp M   &kp N   &kp E      &kp I     &kp O          &kp SQT
+&kp ESC    &kp A      &kp R     &kp S     &kp T      &kp G   &tog 2    &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &tog 4     &kp M   &kp N   &kp E      &kp I     &kp O          &kp SQT
 &kp LSHFT  &kp Z      &kp X     &kp C     &kp D      &kp V                        &kp HOME      &kp PG_UP                        &kp K   &kp H   &kp COMMA  &kp DOT   &kp FSLH       &kp RSHFT
-&mo 4      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT       &mo 4
+&mo 5      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT       &mo 5
             >;
         };
 
         FRAMEWORK_COLEMAK_MOD_DH {
             bindings = <
-&kp EQUAL     &kp N1     &kp N2      &kp N3    &kp N4     &kp N5  &tog 5                                                   &tog 6     &kp N6  &kp N7  &kp N8     &kp N9    &kp N0         &kp MINUS
+&kp EQUAL     &kp N1     &kp N2      &kp N3    &kp N4     &kp N5  &tog 6                                                   &tog 7     &kp N6  &kp N7  &kp N8     &kp N9    &kp N0         &kp MINUS
 &kp TAB       &kp Q      &kp W       &kp F     &kp P      &kp B   &tog 1                                                   &tog 3     &kp J   &kp L   &kp U      &kp Y     &kp SEMICOLON  &kp BSLH
-&kp CAPSLOCK  &kp A      &kp R       &kp S     &kp T      &kp G   &tog 2    &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &tog 9     &kp M   &kp N   &kp E      &kp I     &kp O          &kp SQT
+&kp CAPSLOCK  &kp A      &kp R       &kp S     &kp T      &kp G   &tog 2    &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &tog 4     &kp M   &kp N   &kp E      &kp I     &kp O          &kp SQT
 &kp LSHFT     &kp Z      &kp X       &kp C     &kp D      &kp V                        &kp HOME      &kp PG_UP                        &kp K   &kp H   &kp COMMA  &kp DOT   &kp FSLH       &kp RSHFT
-&mo 4         &kp GRAVE  &kp ESCAPE  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT       &mo 4
+&mo 5         &kp GRAVE  &kp ESCAPE  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT       &mo 5
             >;
         };
 
-        LAYER_GRAMMAR_LINUX {
+        LAYER_PUNCTUATION_VIM {
+            bindings = <
+&trans  &vim_section_sign  &vim_pilcrow  &vim_non_breaking_hyphen  &vim_figure_dash  &vim_en_dash  &trans                                      &trans  &vim_em_dash  &vim_quotation_dash  &vim_dagger  &vim_double_dagger  &vim_ellipsis  &trans
+&trans  &trans             &trans        &trans                    &trans            &trans        &trans                                      &trans  &trans        &trans               &trans       &trans              &trans         &trans
+&trans  &trans             &trans        &trans                    &trans            &trans        &trans  &trans  &trans      &trans  &trans  &trans  &trans        &trans               &trans       &trans              &trans         &trans
+&trans  &trans             &trans        &trans                    &trans            &trans                        &trans      &trans                  &trans        &trans               &trans       &trans              &trans         &trans
+&trans  &trans             &trans        &trans                    &trans                          &trans  &trans  &trans      &trans  &trans  &trans                &trans               &trans       &trans              &trans         &trans
+            >;
+        };
+
+        LAYER_PUNCTUATION_LINUX {
             bindings = <
 &trans  &linux_section_sign  &linux_pilcrow  &linux_non_breaking_hyphen  &linux_figure_dash  &linux_en_dash  &trans                                      &trans  &linux_em_dash  &linux_quotation_dash  &linux_dagger  &linux_double_dagger  &linux_ellipsis  &trans
 &trans  &trans               &trans          &trans                      &trans              &trans          &trans                                      &trans  &trans          &trans                 &trans         &trans                &trans           &trans
@@ -423,7 +461,7 @@
             >;
         };
 
-        LAYER_GRAMMAR_WINDOWS {
+        LAYER_PUNCTUATION_WINDOWS {
             bindings = <
 &trans  &windows_section_sign  &windows_pilcrow  &windows_non_breaking_hyphen  &windows_figure_dash  &windows_en_dash  &trans                                      &trans  &windows_em_dash  &windows_quotation_dash  &windows_dagger  &windows_double_dagger  &windows_ellipsis  &trans
 &trans  &trans                 &trans            &trans                        &trans                &trans            &trans                                      &trans  &trans            &trans                   &trans           &trans                  &trans             &trans
@@ -435,7 +473,7 @@
 
         layer_fn {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &tog 5                                      &tog 6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &tog 6                                      &tog 7  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
 &trans  &trans  &trans  &trans  &trans  &trans  &none                                       &none   &trans  &trans  &trans  &trans   &trans   &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &none   &trans  &trans      &trans  &trans  &none   &trans  &trans  &trans  &trans   &trans   &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans   &trans   &trans
@@ -449,27 +487,27 @@
 &kp TAB    &kp Q      &kp W   &kp F     &kp P      &kp B   &none                                                    &none      &kp J   &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp BSLH
 &trans     &kp A      &kp R   &kp S     &kp T      &kp G   &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp M   &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &kp SQT
 &kp LSHFT  &kp Z      &kp X   &kp C     &kp D      &kp V                        &kp HOME      &kp PG_UP                        &kp K   &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &kp RSHFT
-&mo 6      &kp GRAVE  &trans  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp KP_N0          &kp UP      &kp DOWN      &kp KP_DOT     &kp RBKT         &mo 6
+&mo 7      &kp GRAVE  &trans  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp KP_N0          &kp UP      &kp DOWN      &kp KP_DOT     &kp RBKT         &mo 7
             >;
         };
 
         LAYER_QWERTY {
             bindings = <
-&kp EQUAL   &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 5                                                   &tog 6     &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
+&kp EQUAL   &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 6                                                   &tog 7     &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
 &kp TAB     &kp Q      &kp W     &kp E     &kp R      &kp T   &tog 1                                                   &tog 3     &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
-&kp ESCAPE  &kp A      &kp S     &kp D     &kp F      &kp G   &tog 2    &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &tog 9     &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
+&kp ESCAPE  &kp A      &kp S     &kp D     &kp F      &kp G   &tog 2    &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &tog 4     &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
 &kp LSHFT   &kp Z      &kp X     &kp C     &kp V      &kp B                        &kp HOME      &kp PG_UP                        &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&mo 6       &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 6
+&mo 7       &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 7
             >;
         };
 
         FRAMEWORK_QWERTY {
             bindings = <
-&kp EQUAL     &kp N1     &kp N2      &kp N3    &kp N4     &kp N5  &tog 5                                                   &tog 6     &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
+&kp EQUAL     &kp N1     &kp N2      &kp N3    &kp N4     &kp N5  &tog 6                                                   &tog 7     &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
 &kp TAB       &kp Q      &kp W       &kp E     &kp R      &kp T   &tog 1                                                   &tog 3     &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
-&kp CAPSLOCK  &kp A      &kp S       &kp D     &kp F      &kp G   &tog 2    &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &tog 9     &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
+&kp CAPSLOCK  &kp A      &kp S       &kp D     &kp F      &kp G   &tog 2    &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &tog 4     &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
 &kp LSHFT     &kp Z      &kp X       &kp C     &kp V      &kp B                        &kp HOME      &kp PG_UP                        &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&mo 6         &kp GRAVE  &kp ESCAPE  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 6
+&mo 7         &kp GRAVE  &kp ESCAPE  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 7
             >;
         };
 
