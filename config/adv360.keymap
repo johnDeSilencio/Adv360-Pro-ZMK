@@ -35,8 +35,309 @@
         non_breaking_hyphen: non_breaking_hyphen {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LC(U)) &kp N2 &kp N0 &kp N1 &kp N1 &kp SPACE>;
+            bindings = <&kp N2 &kp N0 &kp NUMBER_1 &kp N1>;
             label = "NON_BREAKING_HYPHEN";
+        };
+
+        ellipsis: ellipsis {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N2 &kp N0 &kp N2 &kp N6>;
+            label = "ELLIPSIS";
+        };
+
+        figure_dash: figure_dash {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N2 &kp N0 &kp N1 &kp N2>;
+            label = "FIGURE_DASH";
+        };
+
+        en_dash: en_dash {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N2 &kp N0 &kp N1 &kp N3>;
+            label = "EN_DASH";
+        };
+
+        em_dash: em_dash {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N2 &kp N0 &kp N1 &kp N4>;
+            label = "EM_DASH";
+        };
+
+        quotation_dash: quotation_dash {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N2 &kp N0 &kp N1 &kp N5>;
+            label = "QUOTATION_DASH";
+        };
+
+        section_sign: section_sign {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N0 &kp N0 &kp A &kp N7>;
+            label = "SECTION_SIGN";
+        };
+
+        pilcrow: pilcrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N0 &kp N0 &kp B &kp N6>;
+            label = "PILCROW";
+        };
+
+        dagger: dagger {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N2 &kp N0 &kp N2 &kp N0>;
+            label = "DAGGER";
+        };
+
+        double_dagger: double_dagger {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N2 &kp N0 &kp N2 &kp N1>;
+            label = "DOUBLE_DAGGER";
+        };
+
+        non_breaking_hyphen_kp: non_breaking_hyphen_kp {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp KP_NUMBER_2 &kp KP_NUMBER_0 &kp KP_NUMBER_1 &kp KP_NUMBER_1>;
+            label = "NON_BREAKING_HYPHEN_KP";
+        };
+
+        ellipsis_kp: ellipsis_kp {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp KP_NUMBER_2 &kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_6>;
+            label = "ELLIPSIS_KP";
+        };
+
+        figure_dash_kp: figure_dash_kp {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp KP_NUMBER_2 &kp KP_NUMBER_0 &kp KP_NUMBER_1 &kp KP_NUMBER_2>;
+            label = "FIGURE_DASH_KP";
+        };
+
+        en_dash_kp: en_dash_kp {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp KP_NUMBER_2 &kp KP_NUMBER_0 &kp KP_NUMBER_1 &kp KP_NUMBER_3>;
+            label = "EN_DASH_KP";
+        };
+
+        em_dash_kp: em_dash_kp {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp KP_NUMBER_2 &kp KP_NUMBER_0 &kp KP_NUMBER_1 &kp KP_NUMBER_4>;
+            label = "EM_DASH_KP";
+        };
+
+        quotation_dash_kp: quotation_dash_kp {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp KP_NUMBER_2 &kp KP_NUMBER_0 &kp KP_NUMBER_1 &kp KP_NUMBER_5>;
+            label = "QUOTATION_DASH_KP";
+        };
+
+        section_sign_kp: section_sign_kp {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp KP_NUMBER_0 &kp KP_NUMBER_0 &kp A &kp KP_NUMBER_7>;
+            label = "SECTION_SIGN_KP";
+        };
+
+        pilcrow_kp: pilcrow_kp {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp KP_NUMBER_0 &kp KP_NUMBER_0 &kp B &kp KP_NUMBER_6>;
+            label = "PILCROW_KP";
+        };
+
+        dagger_kp: dagger_kp {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp KP_NUMBER_2 &kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_0>;
+            label = "DAGGER_KP";
+        };
+
+        double_dagger_kp: double_dagger_kp {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp KP_NUMBER_2 &kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_1>;
+            label = "DOUBLE_DAGGER_KP";
+        };
+
+        linux_prefix: linux_prefix {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LS(U))>;
+            label = "LINUX_PREFIX";
+        };
+
+        windows_prefix: windows_prefix {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LEFT_ALT &kp KP_PLUS>;
+            label = "WINDOWS_PREFIX";
+        };
+
+        windows_suffix: windows_suffix {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LEFT_ALT>;
+            label = "WINDOWS_SUFFIX";
+        };
+
+        linux_non_breaking_hyphen: linux_non_breaking_hyphen {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&linux_prefix &non_breaking_hyphen &linux_suffix>;
+            label = "LINUX_NON_BREAKING_HYPHEN";
+        };
+
+        linux_ellipsis: linux_ellipsis {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&linux_prefix &ellipsis &linux_suffix>;
+            label = "LINUX_ELLIPSIS";
+        };
+
+        linux_figure_dash: linux_figure_dash {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&linux_prefix &figure_dash &linux_suffix>;
+            label = "LINUX_FIGURE_DASH";
+        };
+
+        linux_en_dash: linux_en_dash {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&linux_prefix &en_dash &linux_suffix>;
+            label = "LINUX_EN_DASH";
+        };
+
+        linux_em_dash: linux_em_dash {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&linux_prefix &em_dash &linux_suffix>;
+            label = "LINUX_EM_DASH";
+        };
+
+        linux_quotation_dash: linux_quotation_dash {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&linux_prefix &quotation_dash &linux_suffix>;
+            label = "LINUX_QUOTATION_DASH";
+        };
+
+        linux_section_sign: linux_section_sign {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&linux_prefix &section_sign &linux_suffix>;
+            label = "LINUX_SECTION_SIGN";
+        };
+
+        linux_pilcrow: linux_pilcrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&linux_prefix &pilcrow &linux_suffix>;
+            label = "LINUX_PILCROW";
+        };
+
+        linux_dagger: linux_dagger {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&linux_prefix &dagger &linux_suffix>;
+            label = "LINUX_DAGGER";
+        };
+
+        linux_double_dagger: linux_double_dagger {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&linux_prefix &double_dagger &linux_suffix>;
+            label = "LINUX_DOUBLE_DAGGER";
+        };
+
+        linux_suffix: linux_suffix {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE>;
+            label = "LINUX_SUFFIX";
+        };
+
+        windows_non_breaking_hyphen: windows_non_breaking_hyphen {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&windows_prefix &non_breaking_hyphen_kp &windows_suffix>;
+            label = "WINDOWS_NON_BREAKING_HYPHEN";
+        };
+
+        windows_ellipsis: windows_ellipsis {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&windows_prefix &ellipsis_kp &windows_suffix>;
+            label = "WINDOWS_ELLIPSIS";
+        };
+
+        windows_figure_dash: windows_figure_dash {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&windows_prefix &figure_dash_kp &windows_suffix>;
+            label = "WINDOWS_FIGURE_DASH";
+        };
+
+        windows_en_dash: windows_en_dash {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&windows_prefix &en_dash_kp &windows_suffix>;
+            label = "WINDOWS_EN_DASH";
+        };
+
+        windows_em_dash: windows_em_dash {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&windows_prefix &em_dash_kp &windows_suffix>;
+            label = "WINDOWS_EM_DASH";
+        };
+
+        windows_quotation_dash: windows_quotation_dash {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&windows_prefix &quotation_dash_kp &windows_suffix>;
+            label = "WINDOWS_QUOTATION_DASH";
+        };
+
+        windows_section_sign: windows_section_sign {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&windows_prefix &section_sign_kp &windows_suffix>;
+            label = "WINDOWS_SECTION_SIGN";
+        };
+
+        windows_pilcrow: windows_pilcrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&windows_prefix &pilcrow_kp &windows_suffix>;
+            label = "WINDOWS_PILCROW";
+        };
+
+        windows_dagger: windows_dagger {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&windows_prefix &dagger_kp &windows_suffix>;
+            label = "WINDOWS_DAGGER";
+        };
+
+        windows_double_dagger: windows_double_dagger {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&windows_prefix &double_dagger_kp &windows_suffix>;
+            label = "WINDOWS_DOUBLE_DAGGER";
         };
     };
 
@@ -45,9 +346,9 @@
 
         LAYER_COLEMAK_MOD_DH {
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 4                                                   &mo 6      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0         &kp MINUS
-&kp TAB    &kp Q      &kp W     &kp F     &kp P      &kp B   &tog 1                                                   &tog 7     &kp J   &kp L   &kp U      &kp Y     &kp SEMICOLON  &kp BSLH
-&kp ESC    &kp A      &kp R     &kp S     &kp T      &kp G   &tog 3    &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &tog 8     &kp M   &kp N   &kp E      &kp I     &kp O          &kp SQT
+&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 6                                                   &tog 7     &kp N6  &kp N7  &kp N8     &kp N9    &kp N0         &kp MINUS
+&kp TAB    &kp Q      &kp W     &kp F     &kp P      &kp B   &tog 1                                                   &tog 3     &kp J   &kp L   &kp U      &kp Y     &kp SEMICOLON  &kp BSLH
+&kp ESC    &kp A      &kp R     &kp S     &kp T      &kp G   &tog 2    &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &tog 4     &kp M   &kp N   &kp E      &kp I     &kp O          &kp SQT
 &kp LSHFT  &kp Z      &kp X     &kp C     &kp D      &kp V                        &kp HOME      &kp PG_UP                        &kp K   &kp H   &kp COMMA  &kp DOT   &kp FSLH       &kp RSHFT
 &mo 5      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT       &mo 5
             >;
@@ -55,9 +356,9 @@
 
         FRAMEWORK_COLEMAK_MOD_DH {
             bindings = <
-&kp EQUAL     &kp N1     &kp N2      &kp N3    &kp N4     &kp N5  &tog 4                                                   &mo 6      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0         &kp MINUS
-&kp TAB       &kp Q      &kp W       &kp F     &kp P      &kp B   &tog 1                                                   &tog 7     &kp J   &kp L   &kp U      &kp Y     &kp SEMICOLON  &kp BSLH
-&kp CAPSLOCK  &kp A      &kp R       &kp S     &kp T      &kp G   &tog 3    &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &tog 8     &kp M   &kp N   &kp E      &kp I     &kp O          &kp SQT
+&kp EQUAL     &kp N1     &kp N2      &kp N3    &kp N4     &kp N5  &tog 6                                                   &tog 7     &kp N6  &kp N7  &kp N8     &kp N9    &kp N0         &kp MINUS
+&kp TAB       &kp Q      &kp W       &kp F     &kp P      &kp B   &tog 1                                                   &tog 3     &kp J   &kp L   &kp U      &kp Y     &kp SEMICOLON  &kp BSLH
+&kp CAPSLOCK  &kp A      &kp R       &kp S     &kp T      &kp G   &tog 2    &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &tog 4     &kp M   &kp N   &kp E      &kp I     &kp O          &kp SQT
 &kp LSHFT     &kp Z      &kp X       &kp C     &kp D      &kp V                        &kp HOME      &kp PG_UP                        &kp K   &kp H   &kp COMMA  &kp DOT   &kp FSLH       &kp RSHFT
 &mo 5         &kp GRAVE  &kp ESCAPE  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT       &mo 5
             >;
@@ -65,15 +366,25 @@
 
         LAYER_GRAMMAR_LINUX {
             bindings = <
-&trans  &non_breaking_hyphen  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans                &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans                &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans                &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans                &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &linux_section_sign  &linux_pilcrow  &linux_non_breaking_hyphen  &linux_figure_dash  &linux_en_dash  &trans                                      &trans  &linux_em_dash  &linux_quotation_dash  &linux_dagger  &linux_double_dagger  &linux_ellipsis  &trans
+&trans  &trans               &trans          &trans                      &trans              &trans          &trans                                      &trans  &trans          &trans                 &trans         &trans                &trans           &trans
+&trans  &trans               &trans          &trans                      &trans              &trans          &trans  &trans  &trans      &trans  &trans  &trans  &trans          &trans                 &trans         &trans                &trans           &trans
+&trans  &trans               &trans          &trans                      &trans              &trans                          &trans      &trans                  &trans          &trans                 &trans         &trans                &trans           &trans
+&trans  &trans               &trans          &trans                      &trans                              &trans  &trans  &trans      &trans  &trans  &trans                  &trans                 &trans         &trans                &trans           &trans
             >;
         };
 
-        layer_media {
+        LAYER_GRAMMAR_WINDOWS {
+            bindings = <
+&trans  &windows_section_sign  &windows_pilcrow  &windows_non_breaking_hyphen  &windows_figure_dash  &windows_en_dash  &trans                                      &trans  &windows_em_dash  &windows_quotation_dash  &windows_dagger  &windows_double_dagger  &windows_ellipsis  &trans
+&trans  &trans                 &trans            &trans                        &trans                &trans            &trans                                      &trans  &trans            &trans                   &trans           &trans                  &trans             &trans
+&trans  &trans                 &trans            &trans                        &trans                &trans            &trans  &trans  &trans      &trans  &trans  &trans  &trans            &trans                   &trans           &trans                  &trans             &trans
+&trans  &trans                 &trans            &trans                        &trans                &trans                            &trans      &trans                  &trans            &trans                   &trans           &trans                  &trans             &trans
+&trans  &trans                 &trans            &trans                        &trans                                  &trans  &trans  &trans      &trans  &trans  &trans                    &trans                   &trans           &trans                  &trans             &trans
+            >;
+        };
+
+        LAYER_MEDIA {
             bindings = <
 &none   &kp K_MUTE  &kp C_VOL_DN  &kp C_VOLUME_UP  &kp C_REWIND  &kp C_PLAY_PAUSE  &kp C_FAST_FORWARD                                      &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &trans  &trans  &kp PRINTSCREEN  &trans  &trans
 &none   &none       &none         &trans           &trans        &trans            &trans                                                  &trans                &trans                &trans  &trans  &trans           &trans  &trans
@@ -83,23 +394,43 @@
             >;
         };
 
-        layer_numpad {
-            bindings = <
-&kp EQUAL  &kp N1     &kp N2  &kp N3    &kp N4     &kp N5  &trans                                                   &mo 6      &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
-&kp TAB    &kp Q      &kp W   &kp F     &kp P      &kp B   &none                                                    &none      &kp J   &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp BSLH
-&trans     &kp A      &kp R   &kp S     &kp T      &kp G   &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp M   &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &kp SQT
-&kp LSHFT  &kp Z      &kp X   &kp C     &kp D      &kp V                        &kp HOME      &kp PG_UP                        &kp K   &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &kp RSHFT
-&mo 5      &kp GRAVE  &trans  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp KP_N0          &kp UP      &kp DOWN      &kp KP_DOT     &kp RBKT         &mo 5
-            >;
-        };
-
         layer_fn {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &tog 4                                      &mo 6   &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &tog 6                                      &tog 7  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
 &trans  &trans  &trans  &trans  &trans  &trans  &none                                       &none   &trans  &trans  &trans  &trans   &trans   &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &none   &trans  &trans      &trans  &trans  &none   &trans  &trans  &trans  &trans   &trans   &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans   &trans   &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans   &trans   &trans
+            >;
+        };
+
+        layer_numpad {
+            bindings = <
+&kp EQUAL  &kp N1     &kp N2  &kp N3    &kp N4     &kp N5  &trans                                                   &trans     &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
+&kp TAB    &kp Q      &kp W   &kp F     &kp P      &kp B   &none                                                    &none      &kp J   &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp BSLH
+&trans     &kp A      &kp R   &kp S     &kp T      &kp G   &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp M   &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &kp SQT
+&kp LSHFT  &kp Z      &kp X   &kp C     &kp D      &kp V                        &kp HOME      &kp PG_UP                        &kp K   &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &kp RSHFT
+&mo 7      &kp GRAVE  &trans  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp KP_N0          &kp UP      &kp DOWN      &kp KP_DOT     &kp RBKT         &mo 7
+            >;
+        };
+
+        LAYER_QWERTY {
+            bindings = <
+&kp EQUAL   &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 6                                                   &tog 7     &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
+&kp TAB     &kp Q      &kp W     &kp E     &kp R      &kp T   &tog 1                                                   &tog 3     &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
+&kp ESCAPE  &kp A      &kp S     &kp D     &kp F      &kp G   &tog 2    &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &tog 4     &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
+&kp LSHFT   &kp Z      &kp X     &kp C     &kp V      &kp B                        &kp HOME      &kp PG_UP                        &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
+&mo 7       &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 7
+            >;
+        };
+
+        FRAMEWORK_QWERTY {
+            bindings = <
+&kp EQUAL     &kp N1     &kp N2      &kp N3    &kp N4     &kp N5  &tog 6                                                   &tog 7     &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
+&kp TAB       &kp Q      &kp W       &kp E     &kp R      &kp T   &tog 1                                                   &tog 3     &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
+&kp CAPSLOCK  &kp A      &kp S       &kp D     &kp F      &kp G   &tog 2    &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &tog 4     &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
+&kp LSHFT     &kp Z      &kp X       &kp C     &kp V      &kp B                        &kp HOME      &kp PG_UP                        &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
+&mo 7         &kp GRAVE  &kp ESCAPE  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 7
             >;
         };
 
@@ -110,26 +441,6 @@
 &none  &none         &none         &none         &none         &none         &none        &none  &none      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &none  &none       &none       &none  &none  &none
 &none  &none         &none         &none         &none         &none                             &none      &none                                           &none  &none       &none       &none  &none  &none
 &none  &none         &none         &none         &none                       &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG                &bl BL_INC  &bl BL_DEC  &none  &none  &none
-            >;
-        };
-
-        LAYER_QWERTY {
-            bindings = <
-&kp EQUAL   &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 4                                                   &mo 6      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
-&kp TAB     &kp Q      &kp W     &kp E     &kp R      &kp T   &tog 1                                                   &tog 7     &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
-&kp ESCAPE  &kp A      &kp S     &kp D     &kp F      &kp G   &tog 3    &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &tog 8     &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LSHFT   &kp Z      &kp X     &kp C     &kp V      &kp B                        &kp HOME      &kp PG_UP                        &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&mo 5       &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 5
-            >;
-        };
-
-        FRAMEWORK_QWERTY {
-            bindings = <
-&kp EQUAL     &kp N1     &kp N2      &kp N3    &kp N4     &kp N5  &tog 4                                                   &mo 6      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
-&kp TAB       &kp Q      &kp W       &kp E     &kp R      &kp T   &tog 1                                                   &tog 7     &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
-&kp CAPSLOCK  &kp A      &kp S       &kp D     &kp F      &kp G   &tog 3    &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &tog 8     &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LSHFT     &kp Z      &kp X       &kp C     &kp V      &kp B                        &kp HOME      &kp PG_UP                        &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&mo 5         &kp GRAVE  &kp ESCAPE  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 5
             >;
         };
     };
