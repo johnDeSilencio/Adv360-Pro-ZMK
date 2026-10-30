@@ -105,70 +105,70 @@
         non_breaking_hyphen_kp: non_breaking_hyphen_kp {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp KP_NUMBER_8 &kp KP_NUMBER_2 &kp KP_NUMBER_0 &kp KP_NUMBER_9>;
+            bindings = <&kp KP_NUMBER_2 &kp KP_NUMBER_0 &kp KP_NUMBER_1 &kp KP_NUMBER_1>;
             label = "NON_BREAKING_HYPHEN_KP";
         };
 
         ellipsis_kp: ellipsis_kp {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp KP_NUMBER_8 &kp KP_NUMBER_2 &kp KP_NUMBER_3 &kp KP_NUMBER_0>;
+            bindings = <&kp KP_NUMBER_2 &kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_6>;
             label = "ELLIPSIS_KP";
         };
 
         figure_dash_kp: figure_dash_kp {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp KP_NUMBER_8 &kp KP_NUMBER_2 &kp KP_NUMBER_1 &kp KP_NUMBER_0>;
+            bindings = <&kp KP_NUMBER_2 &kp KP_NUMBER_0 &kp KP_NUMBER_1 &kp KP_NUMBER_2>;
             label = "FIGURE_DASH_KP";
         };
 
         en_dash_kp: en_dash_kp {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp KP_NUMBER_8 &kp KP_NUMBER_2 &kp KP_NUMBER_1 &kp KP_NUMBER_1>;
+            bindings = <&kp KP_NUMBER_2 &kp KP_NUMBER_0 &kp KP_NUMBER_1 &kp KP_NUMBER_3>;
             label = "EN_DASH_KP";
         };
 
         em_dash_kp: em_dash_kp {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp KP_NUMBER_8 &kp KP_NUMBER_2 &kp KP_NUMBER_1 &kp KP_NUMBER_2>;
+            bindings = <&kp KP_NUMBER_2 &kp KP_NUMBER_0 &kp KP_NUMBER_1 &kp KP_NUMBER_4>;
             label = "EM_DASH_KP";
         };
 
         quotation_dash_kp: quotation_dash_kp {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp KP_NUMBER_8 &kp KP_NUMBER_2 &kp KP_NUMBER_1 &kp KP_NUMBER_3>;
+            bindings = <&kp KP_NUMBER_2 &kp KP_NUMBER_0 &kp KP_NUMBER_1 &kp KP_NUMBER_5>;
             label = "QUOTATION_DASH_KP";
         };
 
         section_sign_kp: section_sign_kp {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp KP_NUMBER_0 &kp KP_NUMBER_1 &kp KP_NUMBER_6 &kp KP_NUMBER_7>;
+            bindings = <&kp KP_NUMBER_0 &kp KP_NUMBER_0 &kp A &kp KP_NUMBER_7>;
             label = "SECTION_SIGN_KP";
         };
 
         pilcrow_kp: pilcrow_kp {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp KP_NUMBER_0 &kp KP_NUMBER_1 &kp KP_NUMBER_8 &kp KP_NUMBER_2>;
+            bindings = <&kp KP_NUMBER_0 &kp KP_NUMBER_0 &kp B &kp KP_NUMBER_6>;
             label = "PILCROW_KP";
         };
 
         dagger_kp: dagger_kp {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp KP_NUMBER_8 &kp LS(KP_NUMBER_2) &kp KP_NUMBER_2 &kp KP_NUMBER_4>;
+            bindings = <&kp KP_NUMBER_2 &kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_0>;
             label = "DAGGER_KP";
         };
 
         double_dagger_kp: double_dagger_kp {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp KP_NUMBER_8 &kp KP_NUMBER_2 &kp KP_NUMBER_2 &kp KP_NUMBER_5>;
+            bindings = <&kp KP_NUMBER_2 &kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_1>;
             label = "DOUBLE_DAGGER_KP";
         };
 
